@@ -1,0 +1,4 @@
+Advanced features
+- Display username (Welcome)
+- Users able to edit own reviews (maybe did?)
+- user must logged in to edit etc
