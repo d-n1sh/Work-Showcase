@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">    
+
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <div id="fullpage">
+        <div class="section"><h1>Exercise Tracker</h1><br>
+            <img id="logo" src="images/logo.png" class="img-responsive" alt="Logo" width="250" height="250">
+            <br>
+
+            <u><h3 id="tag" >What is Exercise Tracker?</h3></u><br>
+
+            <form action="#section2">
+                <b><input type="text" id="username" placeholder="Username"></b>
+                <b><a><input type="submit" onclick="getData()" id="proceed" value=">"></a></b>
+            </form>
+
+        </div>
+        <div class="section">
+
+            <div class="container-fluid bg-dark">
+
+                <div class="container">
+                    <ul>
+                        <li><img id="small_logo" src="images/logo.png" class="img-responsive" alt="Logo" width="50" height="50"></li>
+                        <li><a class="active" href="#section2">Exercise Tracker</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li id="contact"><a href="#">Contact</a></li>
+                        <b><li id="right"><a><div id="display" class="border-radius">
+                        </div></a></li></b>
+                        <li id="right"><a href="#"><i id="share" class="bi bi-share"></i></a></li>
+                    </ul>
+                </div>
+
+                <h1 id="track">Let's start <em>Tracking!</em></h1>
+                <h5>Choose your level below.</h5>
+                <br><br>
+
+            </div>
+
+            <div class="container" id="exercises">
+                <div class="row">
+                    <div class="col">
+                        <h5>Level 1</h5>
+                        <h3>Jogging</h3>
+                        <div class="col-sm">
+                            <svg version="1.1" id="Layer_1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:url(#SVGID_1_);}
+                            </style>
+                            <g>
+                                <radialGradient id="SVGID_1_" cx="683" cy="384.5" r="554.2244" gradientUnits="userSpaceOnUse">
+                                    <stop  offset="0" style="stop-color:#CCE0F4"/>
+                                    <stop  offset="6.405089e-02" style="stop-color:#C3DCF2"/>
+                                    <stop  offset="0.1706" style="stop-color:#A9D2EE"/>
+                                    <stop  offset="0.3066" style="stop-color:#80C2E7"/>
+                                    <stop  offset="0.4649" style="stop-color:#47ACDE"/>
+                                    <stop  offset="0.5674" style="stop-color:#1E9CD7"/>
+                                    <stop  offset="0.8652" style="stop-color:#0075BE"/>
+                                    <stop  offset="0.9944" style="stop-color:#005B97"/>
+                                </radialGradient>
+                                <path class="st0" d="M1311,769H55c-30.2,0-55-24.8-55-55V55C0,24.8,24.8,0,55,0h1256c30.2,0,55,24.8,55,55v659
+                                    C1366,744.2,1341.2,769,1311,769z"/>
+                                
+                                    <image style="overflow:visible;" width="512" height="512" xlink:href="images/unlock.png"  transform="matrix(0.75 0 0 0.75 179 185)">
+                                </image>
+                                
+                                    <a xlink:href="#section3"><image style="overflow:visible;" width="512" height="512" xlink:href="images/runner.png"  transform="matrix(1 0 0 1 680 103)">
+                                </image></a>
+                            </g>
+                            </svg>
+                        </div>
+                        <h2>UNLOCKED</h2>
+
+                    </div>
+                    <div class="col">
+                        <h5>Level 2</h5>
+                        <h3>Cycling</h3>
+                        <div class="col-sm">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+                            <style type="text/css">
+                                .st4{opacity:0.6;}
+                                .st4{fill:url(#SVGID_2_);}
+                            </style>
+                            <g class="st4">
+                                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="384" x2="1366" y2="384">
+                                    <stop  offset="2.770450e-07" style="stop-color:#D40000"/>
+                                    <stop  offset="1" style="stop-color:#E200E9;stop-opacity:0.9547"/>
+                                    <stop  offset="1" style="stop-color:#E600E6;stop-opacity:0.8413"/>
+                                    <stop  offset="1" style="stop-color:#FF00D5;stop-opacity:0"/>
+                                </linearGradient>
+                                <path class="st4" d="M1315.5,768H50.5C22.7,768,0,745.3,0,717.5v-667C0,22.7,22.7,0,50.5,0h1265c27.8,0,50.5,22.7,50.5,50.5v667
+                                    C1366,745.3,1343.3,768,1315.5,768z"/>
+                            </g>
+                            <image style="overflow:visible;" width="512" height="512" xlink:href="images/cycling.png"  transform="matrix(1.3418 0 0 1.3418 303 42)">
+                            </image>
+                            <image style="overflow:visible;" width="512" height="512" xlink:href="images/lock.png"  transform="matrix(1.2832 0 0 1.2832 333 54)">
+                            </image>
+                            </svg>
+
+
+                        </div>
+                        <h2>LOCKED</h2>
+
+                    </div>
+                    <div class="col">
+                        <h5>Level 3</h5>
+                        <h3>Pull-ups</h3>
+                        <div class="col-sm">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+                            <style type="text/css">
+                                .st3{fill:url(#SVGID_3_);}
+                            </style>
+                            <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="0" y1="384.5" x2="1366" y2="384.5">
+                                <stop  offset="0" style="stop-color:#FF7BAC"/>
+                                <stop  offset="0.6555" style="stop-color:#DC7EE6"/>
+                                <stop  offset="1" style="stop-color:#CC7FFF"/>
+                            </linearGradient>
+                            <path class="st3" d="M1311,769H55c-30.2,0-55-24.8-55-55V55C0,24.8,24.8,0,55,0h1256c30.2,0,55,24.8,55,55v659
+                                C1366,744.2,1341.2,769,1311,769z"/>
+                            <image style="overflow:visible;opacity:0.7;" width="512" height="512" xlink:href="images/C219_GA.png"  transform="matrix(1.3008 0 0 1.3008 351 63)">
+                            </image>
+                            <image style="overflow:visible;" width="512" height="512" xlink:href="images/lock.png"  transform="matrix(1.2656 0 0 1.2656 360 63)">
+                            </image>
+                            </svg>
+
+
+                        </div>
+                        <h2>LOCKED</h2>
+
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Copyright 2022 @ Exercise Tracker Pte Ltd</p>
+            </footer>
+
+        </div>
+        <div class="section">
+            <div class="slides">
+                <div class="slide">
+                    <h5>Level 1</h5>
+                    <h3>Jogging</h3>
+                    <div class="col-sm" id="exerciseLogo">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:url(#SVGID_1_);}
+                        </style>
+                        <g>
+                            <radialGradient id="SVGID_1_" cx="683" cy="384.5" r="554.2244" gradientUnits="userSpaceOnUse">
+                                <stop  offset="0" style="stop-color:#CCE0F4"/>
+                                <stop  offset="6.405089e-02" style="stop-color:#C3DCF2"/>
+                                <stop  offset="0.1706" style="stop-color:#A9D2EE"/>
+                                <stop  offset="0.3066" style="stop-color:#80C2E7"/>
+                                <stop  offset="0.4649" style="stop-color:#47ACDE"/>
+                                <stop  offset="0.5674" style="stop-color:#1E9CD7"/>
+                                <stop  offset="0.8652" style="stop-color:#0075BE"/>
+                                <stop  offset="0.9944" style="stop-color:#005B97"/>
+                            </radialGradient>
+                            <path class="st0" d="M1311,769H55c-30.2,0-55-24.8-55-55V55C0,24.8,24.8,0,55,0h1256c30.2,0,55,24.8,55,55v659
+                                C1366,744.2,1341.2,769,1311,769z"/>
+                            
+                                <image style="overflow:visible;" width="512" height="512" xlink:href="images/unlock.png"  transform="matrix(0.75 0 0 0.75 179 185)">
+                            </image>
+                            
+                                <image style="overflow:visible;" width="512" height="512" xlink:href="images/runner.png"  transform="matrix(1 0 0 1 680 103)">
+                            </image>
+                        </g>
+                        </svg>
+                    </div>
+
+                    <form action="#3">
+                        <div class="row">
+                            <div class="column">
+                                <label for="Day1">Day 1:</label><br>
+                                <input type="number" id="day1" placeholder="Enter Day 1 distance(km):"><br>
+                                <label for="Day2">Day 2:</label><br>
+                                <input type="number" id="day2" placeholder="Enter Day 2 distance(km):"><br>
+                                <label for="Day3">Day 3:</label><br>
+                                <input type="number" id="day3" placeholder="Enter Day 3 distance(km):"><br>
+                                <label for="Day4">Day 4:</label><br>
+                                <input type="number" id="day4" placeholder="Enter Day 4 distance(km):"><br>
+                            </div>
+                            <div id="status" class="col-sm-4">
+                                
+                            </div>
+                            <div class="column">
+                                <label for="Day5">Day 5:</label><br>
+                                <input type="number" id="day5" placeholder="Enter Day 5 distance(km):"><br>
+                                <label for="Day6">Day 6:</label><br>
+                                <input type="number" id="day6" placeholder="Enter Day 6 distance(km):"><br>
+                                <label for="Day7">Day 7:</label><br>
+                                <input type="number" id="day7" placeholder="Enter Day 7 distance(km):"><br><br>
+                                <input type="submit" id="next" onclick="getDayData()" value="Submit">
+                            </div>
+                        </div>
+                    </form> 
+
+                </div>
+                <div class="slide">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+        </div>
+
+    </div>   
+
+    <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"> </script>
+
+    <script>
+        tippy('#tag', {
+            content: 'Exercise Tracker is an online app that helps users keep track of their weekly exercise regime.',
+        });
+
+        tippy('#share', {
+            content: 'Share it with your friends!',
+        });    
+
+        $(document).ready(function () {
+            $('#fullpage').fullpage({ //initialize
+            //set options
+            sectionsColor: ['#23395d','#1c2e4a', '#152238'],
+            navigation: false,
+            navigationPosition: 'right',
+            anchors: ['section1', 'section2','section3']
+        })});
+
+        var relativeEl = document.querySelector('.img-responsive');
+        relativeEl.style.transform = 'translateX()';
+
+        anime({
+            targets: '.img-responsive',
+            translateX: 250,
+            direction: 'alternate',
+            easing: 'easeInOutSine'
+        });
+
+        anime({
+            targets: '#exerciseLogo',
+            translateX: 270,
+            direction: 'alternate',
+            loop: true,
+            easing: 'easeInOutSine'
+        });
+
+        
+
+    </script>
+
+</body>
+</html>
